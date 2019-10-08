@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from "./components/header/Header";
 import FlashcardsPage from "./components/flashcards-page/Flashcards-page";
+import Home from "./components/home/Home";
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
       <div className="App">
         <Header/>
         <Switch>
-            <Route path='/flashcards' component={}/>
+            <Route path='/flashcards' component={FlashcardsPage}/>
+            <Route path='/' component={Home} />
         </Switch>
       </div>
     );

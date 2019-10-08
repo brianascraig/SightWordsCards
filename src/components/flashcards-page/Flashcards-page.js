@@ -7,7 +7,9 @@ import Quiz from "./quiz/Quiz";
 export default function FlashcardsPage() {
     return (
         <div className="FlashcardsPage">
-
+            <Cards/>
+            <Practice/>
+            <Quiz/>
         </div>
     );
 }
